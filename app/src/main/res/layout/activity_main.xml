@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#595858"
+        android:layout_gravity="center"
+        android:text="숫자를 입력하세요." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/etInputNumber"
+        android:textAlignment="center"
+        android:hint="ex) 456"
+        android:textSize="30dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과 출력"
+        android:layout_gravity="center"
+        android:backgroundTint="#FCE4EC"
+        android:textColor="#595858"
+        android:onClick="onClickResult" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과는 ??? 입니다."
+        android:layout_gravity="center"
+        android:id="@+id/tvResult"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+</LinearLayout>
